@@ -1,7 +1,7 @@
 ---
 - name: Copy website file template
       template:
-        src: "{{ template_src }}"
+        src: "index.html.j2"
         dest: "{{ template_dst }}"
         
     - name: Create Apache container
