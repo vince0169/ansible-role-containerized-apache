@@ -1,14 +1,14 @@
 ---
 - name: Copy website file template
-      template:
-        src: "index.html.j2"
-        dest: "{{ project_dir }}/index.html"
+  template:
+    src: "index.html.j2"
+    dest: "{{ project_dir }}/index.html"
         
-    - name: Create Apache container
-      docker_container:
-        name: webapp
-        image: httpd
-        ports:
-          - "{{ external_port }}:{{ intrenal_port }}"
-        volumes:
-          - "{{ project_dir }}/index.html:/usr/local/apache2/htdocs/index.html"
+- name: Create Apache container
+  docker_container:
+    name: webapp
+    image: httpd
+    ports:
+    - "{{ external_port }}:{{ intrenal_port }}"
+    volumes:
+    - "{{ project_dir }}/index.html:/usr/local/apache2/htdocs/index.html"
