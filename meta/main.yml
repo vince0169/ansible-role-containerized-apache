@@ -1,0 +1,3 @@
+galaxy_info:
+  author: Vincent Ceruti
+  description: This role is to deploy an Apache container
