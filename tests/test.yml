@@ -1,0 +1,6 @@
+  hosts: prod
+  become: true
+  vars_files:
+    - files/secrets/credentials.vault
+  roles:
+    - { ansible-role-containerized-apache }
