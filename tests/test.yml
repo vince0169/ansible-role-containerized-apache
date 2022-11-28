@@ -1,5 +1,6 @@
   hosts: localhost
   become: true
+  ansible_connection: localhost
   vars_files:
     - files/secrets/credentials.vault
   roles:
