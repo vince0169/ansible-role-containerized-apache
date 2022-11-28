@@ -1,4 +1,4 @@
-  hosts: prod
+  hosts: localhost
   become: true
   vars_files:
     - files/secrets/credentials.vault
