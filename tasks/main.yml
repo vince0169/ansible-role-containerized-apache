@@ -9,6 +9,6 @@
     name: webapp
     image: httpd
     ports:
-    - "{{ external_port }}:{{ intrenal_port }}"
+    - "{{ external_port }}:{{ internal_port }}"
     volumes:
     - "{{ project_dir }}/index.html:/usr/local/apache2/htdocs/index.html"
