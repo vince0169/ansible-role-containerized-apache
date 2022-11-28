@@ -1,4 +1,4 @@
 # defaults variables
-project_dir: /home/admin/
+project_dir: /home/admin
 external_port: 80
 internal_port: 80
